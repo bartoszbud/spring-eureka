@@ -20,4 +20,12 @@ eureka:
     registry-with-eureka: false
     fetch-registry: false
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus,health
+  info:
+    env:
+      enabled: true
 

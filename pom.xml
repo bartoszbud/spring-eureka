@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>pl.lab</groupId>
 	<artifactId>spring-eureka</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>DEV-SNAPSHOT</version>
 	<name>spring-eureka</name>
 	<description>Eureka service for Spring Boot</description>
 	<properties>
