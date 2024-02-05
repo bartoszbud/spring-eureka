@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-eureka
+  labels:
+    app: spring-eureka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-eureka
+  template:
+    metadata:
+      labels:
+        app: spring-eureka
+    spec:
+      containers:
+        - name: spring-eureka
+          image: bartoszbud/spring-eureka:DEV-SNAPSHOT
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8761
