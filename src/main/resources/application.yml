@@ -1,0 +1,30 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: registry-service-sba
+  boot:
+    admin:
+      client:
+        url: http://spring-admin-service/
+        instance:
+          name: spring-eureka
+          prefer-ip: true
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  client:
+    registry-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: INFO
+        discovery: INFO
+
+
