@@ -1,6 +1,3 @@
-server:
-  port: 8761
-
 spring:
   application:
     name: registry-service-sba
@@ -13,7 +10,7 @@ spring:
           prefer-ip: true
   cloud:
     config:
-      enabled: false
+      import: optional:configserver:http://spring-config-service/
 
 eureka:
   client:
