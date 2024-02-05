@@ -20,11 +20,4 @@ eureka:
     registry-with-eureka: false
     fetch-registry: false
 
-logging:
-  level:
-    com:
-      netflix:
-        eureka: INFO
-        discovery: INFO
-
 
